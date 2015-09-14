@@ -1,0 +1,3 @@
+[submodule "wwwdata"]
+	path = wwwdata
+	url = git@github.com:phpmyadmin/phpmyadmin.git
