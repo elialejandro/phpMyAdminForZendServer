@@ -80,7 +80,7 @@ if ($httpAuth) {
 
     $authPasswordCrypt = base64_encode( sha1( $httpPassword, true ) );
 
-    file_put_contents ( "$appDir/.$authFile", $httpUser . ':{SHA}' . $authPasswordCrypt );
+    file_put_contents ( "$appDir/wwwdata/.$authFile", $httpUser . ':{SHA}' . $authPasswordCrypt );
     chmod ( "$appDir/.$authFile", 0444 );
 
     $httpAuthPart = <<<EOP
@@ -167,7 +167,7 @@ DirectoryIndex index.php
 $httpAuthPart
 EOT;
 
-file_put_contents ( "$appDir/.htaccess", "$htaccessText" );
+file_put_contents ( "$appDir/wwwdata/.htaccess", "$htaccessText" );
 
-file_put_contents ( "$appDir/config.inc.php", "$configuration" );
+file_put_contents ( "$appDir/wwwdata/config.inc.php", "$configuration" );
 chmod ( "$appDir/config.inc.php", 0666 );

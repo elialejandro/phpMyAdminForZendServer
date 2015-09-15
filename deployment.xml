@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
+    <name>phpMyAdmin</name>
+    <description>Zend Server 6.x Deployment Package - phpMyAdmin 4.4.14.1</description>
+    <version>
+        <release>4.4.14.1</release>
+    </version>
+    <icon>themes/original/img/logo_right.png</icon>
+    <eula>EULA</eula>
+    <appdir>data</appdir>
+    <docroot>data/wwwdata</docroot>
+    <scriptsdir>scripts</scriptsdir>
+    <dependencies>
+    <required>
+		<php>
+			<min>5.3</min>
+		</php>
+      	<extension>
+            <name>mysql</name>
+        </extension>
+		<extension>
+            <name>SPL</name>
+        </extension>
+		<extension>
+            <name>json</name>
+        </extension>
+		<extension>
+			<name>mbstring</name>
+   		</extension>
+		<extension>
+        	<name>zip</name>
+        </extension>
+		<extension>
+        	<name>gd</name>
+        </extension>
+		<extension>
+        	<name>libxml</name>
+        </extension>
+    </required>
+    </dependencies>
+    <parameters>
+    <parameter display="MySQL Server Hostname or IP" id="my_host" readonly="false" required="true" type="string">
+            <defaultvalue>127.0.0.1</defaultvalue>
+        </parameter>
+        <parameter display="MySQL Server TCP Port" id="my_port" readonly="false" required="true" type="string">
+            <defaultvalue>3306</defaultvalue>
+        </parameter>
+        <parameter display="MySQL Server/Database User" id="my_user" readonly="false" required="true" type="string">
+            <defaultvalue>root</defaultvalue>
+        </parameter>
+        <parameter display="MySQL Server/Database Password" id="my_passwd" readonly="false" required="false" type="password"/>
+		<parameter display="Auto login without password" id="no_password" readonly="false" required="false" type="checkbox">
+			<defaultvalue>true</defaultvalue>
+			<description>phpMyAdmin can be accessed without login credentials. Use only on a development machine.</description>
+		</parameter>
+		<parameter display="Use HTTP (Apache) Basic Authentication?" id="my_auth" readonly="false" required="false" type="checkbox">
+			<defaultvalue>false</defaultvalue>
+			<description>Use HTTP Basic Authentication to protect access to phpMyAdmin. It should not be used in conjunction with phpMyadmin's built-in HTTP Authentication.</description>
+		</parameter>
+		<parameter display="HTTP (Apache) Authentication Login" id="my_auth_user" readonly="false" required="false" type="string">
+			<defaultvalue>DBadmin</defaultvalue>
+		</parameter>
+		<parameter display="HTTP (Apache) Authentication Password" id="my_auth_pw" readonly="false" required="false" type="string"/>
+  	</parameters>
+</package>
