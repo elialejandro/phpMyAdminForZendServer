@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
     <name>phpMyAdmin</name>
-    <description>Zend Server 6.x Deployment Package - phpMyAdmin 4.4.14.1</description>
+    <description>Zend Server 6.x Deployment Package - phpMyAdmin 4.4.15</description>
     <version>
-        <release>4.4.14.1</release>
+        <release>4.4.15</release>
     </version>
     <icon>themes/original/img/logo_right.png</icon>
     <eula>EULA</eula>
