@@ -58,12 +58,6 @@ if (! $dbPassword) {
     $dbPassword = '';
 }
 
-$link = mysqli_connect($dbHost, $dbUser, $dbPassword);
-if (mysqli_connect_errno()) {
-    echo ('Could not connect: ' . mysqli_connect_error());
-    exit ( 1 );
-}
-
 $httpAuthPart = '';
 $httpAuth = getenv ( "ZS_MY_AUTH" );
 if ($httpAuth) {
