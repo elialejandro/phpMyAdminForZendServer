@@ -112,7 +112,7 @@ $template = <<<'EOC'
 $i = 0;
 $i++;
 $cfg['Servers'][$i]['connect_type'] = 'tcp';
-$cfg['Servers'][$i]['extension'] = 'mysql';
+$cfg['Servers'][$i]['extension'] = 'mysqli';
 #PASSWORD_CONFIG#
 
 $cfg['Servers'][$i]['host'] = '#HOST#';
