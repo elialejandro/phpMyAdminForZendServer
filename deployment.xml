@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
     <name>phpMyAdmin</name>
-    <description>Zend Server 6.x Deployment Package - phpMyAdmin 4.5.0.2</description>
+    <description>Zend Server 6.x Deployment Package - phpMyAdmin 4.6.5.2</description>
     <version>
-        <release>4.5.0.2</release>
+        <release>4.6.5.2</release>
     </version>
     <icon>themes/original/img/logo_right.png</icon>
     <eula>EULA</eula>
@@ -13,30 +13,27 @@
     <dependencies>
     <required>
 		<php>
-			<min>5.3</min>
+			<min>5.5</min>
 		</php>
       	<extension>
-            <name>mysql</name>
-        </extension>
-		<extension>
             <name>SPL</name>
         </extension>
 		<extension>
             <name>json</name>
         </extension>
 		<extension>
-			<name>mbstring</name>
-   		</extension>
-		<extension>
-        	<name>zip</name>
+            <name>mbstring</name>
         </extension>
+		<extension>
+			<name>zip</name>
+   		</extension>
 		<extension>
         	<name>gd</name>
         </extension>
 		<extension>
         	<name>libxml</name>
         </extension>
-    </required>
+		</required>
     </dependencies>
     <parameters>
     <parameter display="MySQL Server Hostname or IP" id="my_host" readonly="false" required="true" type="string">
