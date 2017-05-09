@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
     <name>phpMyAdmin</name>
-    <description>Zend Server 6.x Deployment Package - phpMyAdmin 4.6.5.2</description>
+    <description>Zend Server 6.x Deployment Package - phpMyAdmin 4.7.0.0</description>
     <version>
-        <release>4.6.5.2</release>
+        <release>4.7.0.0</release>
     </version>
     <icon>themes/original/img/logo_right.png</icon>
     <eula>EULA</eula>
-    <appdir>data</appdir>
-    <docroot>data/wwwdata</docroot>
+    <appdir>wwwdata</appdir>
+    <docroot>wwwdata</docroot>
     <scriptsdir>scripts</scriptsdir>
     <dependencies>
     <required>

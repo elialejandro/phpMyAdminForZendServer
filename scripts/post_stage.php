@@ -161,7 +161,7 @@ DirectoryIndex index.php
 $httpAuthPart
 EOT;
 
-file_put_contents ( "$appDir/wwwdata/.htaccess", "$htaccessText" );
+file_put_contents ( "$appDir/.htaccess", "$htaccessText" );
 
-file_put_contents ( "$appDir/wwwdata/config.inc.php", "$configuration" );
+file_put_contents ( "$appDir/config.inc.php", "$configuration" );
 chmod ( "$appDir/config.inc.php", 0666 );
